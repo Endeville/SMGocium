@@ -1,9 +1,8 @@
 package bg.smgocium.models.enities.enums;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
+
 @Getter
 public enum Colour {
     WHITE("#FFFFFF"),
@@ -24,4 +23,8 @@ public enum Colour {
     PURPLE("#820080");
 
     private final String hexCode;
+
+    Colour(String hexCode) {
+        this.hexCode = hexCode;
+    }
 }
